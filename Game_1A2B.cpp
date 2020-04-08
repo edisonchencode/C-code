@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-int main(void) 
-{
+int main(){
  		char guess[4], cpans[4];
 		int count=0, a, b, i,j;
 		int sum,c,d;
@@ -19,7 +18,7 @@ int main(void)
 			do{	
 			a=0;
 		    b=0;
-			printf("½Ğ¿é¤J²q´ú¼Æ¦r(¥|¦ì¼Æ) :");
+			printf("è«‹è¼¸å…¥çŒœæ¸¬æ•¸å­—(å››ä½æ•¸) :");
 			scanf("%s", &guess);
 			count++;
 			for (i=0;i<4;i++){
@@ -34,13 +33,13 @@ int main(void)
 			 }  
 			   sum = a ;			 		
 	 		if (sum == 4){
-			    printf("»«ªG! ²q¹ï¤F, µª®×¬O %s\n", guess);
+			    printf("è³“æœ! çŒœå°äº†, ç­”æ¡ˆæ˜¯ %s\n", guess);
 			  	break;
 	         }	 
-			    printf("±zªºµª®×¬O %d A %d B ! ¥[ªo !!\n",a,b);
+			    printf("æ‚¨çš„ç­”æ¡ˆæ˜¯ %d A %d B ! åŠ æ²¹ !!\n",a,b);
 				 
-		} while(1);	/*µL½a°j°é*/ 
-		printf("\nÁ`¦@²q¤F %d ¦¸!\n\n", count);
+		} while(1);	/*ç„¡çª®è¿´åœˆ*/ 
+		printf("\nç¸½å…±çŒœäº† %d æ¬¡!\n\n", count);
  		
 		system("PAUSE");	
  		return 0;
